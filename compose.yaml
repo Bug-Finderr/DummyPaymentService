@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=paymentdb'
+      - 'POSTGRES_PASSWORD=bugfi'
+      - 'POSTGRES_USER=bugfinderr'
+    ports:
+      - '6969:5432'
